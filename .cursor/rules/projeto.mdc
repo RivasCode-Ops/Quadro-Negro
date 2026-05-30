@@ -1,0 +1,29 @@
+---
+description: Quadro-Negro — Kanban local Vite + vanilla JS
+alwaysApply: true
+---
+
+# Quadro-Negro
+
+Kanban local-first: A Fazer / Em Progresso / Concluido.
+
+## Stack
+- Vite 8 + vanilla JS (ESM)
+- Persistencia: `localStorage`
+- Logica testavel: `src/lib/board-core.js`
+
+## Comandos
+```bash
+npm run dev      # http://localhost:5173
+npm run build
+npm test         # vitest
+```
+
+## Regras
+- Logica de dominio em `board-core.js`; UI em `main.js`
+- DnD HTML5 entre colunas; mini-IFTTT: done → checklist 100%
+- Activity log por card em `task.activity[]`
+- Nao quebrar export/import JSON (`exportBoardPayload`)
+
+## Validacao antes de PR
+`npm test && npm run build`

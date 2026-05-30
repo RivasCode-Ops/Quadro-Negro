@@ -5,7 +5,6 @@ import {
   PRIORITIES,
   RELEASE_KEY,
   STORAGE_KEY,
-  appendActivity,
   createTask,
   deleteTaskFromState,
   dueStatus,
